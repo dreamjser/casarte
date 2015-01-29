@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">
+		<title>卡萨帝</title>
+		<link rel="stylesheet" href="css/page.css?v=3.1">
+
+		<script type="text/javascript">
+			(function(){
+
+				var isOnPc=!(/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent));
+
+				if(isOnPc){
+					location.href="landing.html";
+				}
+			})();
+			(function(){
+
+				var imgArr = ['images/loading.png'];
+
+				for(var i=0;i<imgArr.length;i++){
+
+					var image = new Image(),
+						src = imgArr[i];
+
+					image.src = src;
+				}
+			})();
+			(function(){
+			    var phoneWidth = parseInt(window.screen.width);
+			    var phoneScale = phoneWidth/640;
+
+			    var ua = navigator.userAgent;
+			    if (/Android (\d+\.\d+)/.test(ua)){
+			      var version = parseFloat(RegExp.$1);
+			      // andriod 2.3
+			      if(version>2.3){
+			        document.write('<meta name="viewport" content="width=640, minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+			      // andriod 2.3以上
+			      }else{
+			        document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+			      }
+			      // 其他系统
+			    } else {
+			      document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+			    }
+			})();
+			
+		</script>
+		<script type="text/javascript">
+			var _smq = _smq || [];
+			_smq.push(['_setAccount', '1d1e8cb', new Date()]);
+			_smq.push(['pageview']);
+
+			(function() {
+			var sm = document.createElement('script'); sm.type = 'text/javascript'; sm.async = true;
+			sm.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdnmaster.com/sitemaster/collect.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sm, s);
+			})();
+		</script>
+	</head>
+	<body>
+		<!-- Acxiom AbiliTag v2.0 for site: C_MLA_Dec_Mobile_Site -->
+		<script type="text/javascript">
+			window.acxm={api:Function(),x:function(){var k=document,e=encodeURIComponent,r="script",m=k.getElementsByTagName(r)[0],i=k.createElement(r),t="&c=";try{t=t+k.cookie.match('_acxm=([^;]*)').slice(1);}catch(z){};i.async=true;i.src="//t-cn.acxiom-online.com/tag/d80442bccadeb89fbc69c6d4b1fda765/st.js?l="+e(k.location)+"&r="+e(k.referrer)+t+"&v=2.0&z="+Math.random();m.parentNode.insertBefore(i,m)}()}
+		</script>
+		<div id="loading" class="loading"><div class="loading-center"><span></span><span></span><span></span><span></span></div></div>
+
+		<div class="game-tips-mask none"></div>
+		<div id="game_tips" class="game-tips opacity0 none">
+			<div class="game-tips-close"></div>
+		</div>
+
+		<div id="p1" class="wrapper none">
+			<!-- 第一页 -->
+			<div id="page1" class="pr page page1">
+
+				<div id="page_img1" class="pa page-img"><img class="pa img-p100" src="images/page1_m.png"></div>
+
+				<div class="pa page1-bg"><img class="pa img-p100" src="images/page1_w.png"></div>
+				<div class="pa page-content">
+					<div id="page1_content" class="pa page1-content-box">
+
+						<p class="icon-bg pa page1-head-arrow"></p>
+
+						<p class="pa page1-head opacity0">
+							<img id="head" class="img-p100 bottom-0" src="images/animate/0_0/0.jpg">
+
+						</p>
+						<div class="pa icon-bg page1-title opacity0"></div>
+						<div class="pa icon-bg page1-point opacity0"></div>
+						<div id="page1_btn" class="pa icon-bg page1-begin opacity0"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 第二页 -->
+			<div id="page2" class="pr page page2 none">
+
+				<div id="page_img2" class="pa page-img"><img class="pa img-p100" src="images/loading.png"></div>
+
+				<div id="page2_content" class="pa page-content">
+					<div id="page2_content_top" class="pa page-content-top">
+
+						<div class="pa icon-bg page-hours opacity0"></div>
+						<div class="pa icon-bg page-time opacity0"><p class="day-time">06:15:00</p></div>
+						<div class="pa icon-bg page-words opacity0"></div>
+					</div>
+					<div id="page2_content_bottom" class="pa page-content-bottom">
+
+						<div class="pa icon-bg page-count opacity0">
+							
+							<p class="pa page-minus"></p>
+							<p class="pa page-num">01</p>
+							<p class="pa tc page-plus"></p>
+						</div>
+
+						<div id="page2_btn" class="pa icon-bg page-next opacity0"></div>
+					</div>
+				</div>
+			</div>
+
+			<!-- 第三页 -->
+			<div id="page3" class="pr page page3 none">
+
+				<div class="pa page-img"><img class="pa img-p100" src="images/loading.png"></div>
+
+				<div class="pa page-content">
+					<div class="pa page-content-top">
+
+						<div class="pa icon-bg page-hours opacity0"></div>
+						<div class="pa icon-bg page-time opacity0"><p class="day-time">09:00:00</p></div>
+						<div class="pa icon-bg page-words opacity0"></div>
+					</div>
+					<div class="pa page-content-bottom">
+
+						<div class="pa icon-bg page-count opacity0">
+							
+							<p class="pa page-minus"></p>
+							<p class="pa page-num">01</p>
+							<p class="pa tc page-plus"></p>
+						</div>
+
+						<div id="page3_btn1" class="pa icon-bg page-next page-next1 opacity0"></div>
+						<div id="page3_btn2" class="pa icon-bg page-next page-next2 opacity0"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 第四页 -->
+			<div id="page4" class="pr page page4 none">
+
+				<div class="pa page-img"><img class="pa img-p100" src="images/loading.png"></div>
+
+				<div class="pa page-content">
+					<div class="pa page-content-top">
+
+						<div class="pa icon-bg page-hours opacity0"></div>
+						<div class="pa icon-bg page-time opacity0"><p class="day-time">10:00:00</p></div>
+						<div class="pa icon-bg page-words opacity0"></div>
+					</div>
+					<div class="pa page-content-bottom">
+
+						<div class="pa icon-bg page-count opacity0">
+							
+							<p class="pa page-minus"></p>
+							<p class="pa page-num">01</p>
+							<p class="pa tc page-plus"></p>
+						</div>
+
+						<div id="page4_btn1" class="pa icon-bg page-next page-next1 opacity0"></div>
+						<div id="page4_btn2" class="pa icon-bg page-next page-next2 opacity0"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 第五页 -->
+			<div id="page5" class="pr page page5 none">
+
+				<div class="pa page-img"><img class="pa img-p100" src="images/loading.png"></div>
+
+				<div class="pa page-content">
+					<div class="pa page-content-top">
+
+						<div class="pa icon-bg page-hours opacity0"></div>
+						<div class="pa icon-bg page-time opacity0"><p class="day-time">12:00:00</p></div>
+						<div class="pa icon-bg page-words opacity0"></div>
+					</div>
+					<div class="pa page-content-bottom">
+
+						<div class="pa icon-bg page-count opacity0">
+							
+							<p class="pa page-minus"></p>
+							<p class="pa page-num">01</p>
+							<p class="pa tc page-plus"></p>
+						</div>
+
+						<div id="page5_btn1" class="pa icon-bg page-next page-next1 opacity0"></div>
+						<div id="page5_btn2" class="pa icon-bg page-next page-next2 opacity0"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 第六页 -->
+			<div id="page6" class="pr page page6 none">
+
+				<div class="pa page-img"><img class="pa img-p100" src="images/loading.png"></div>
+
+				<div class="pa page-content">
+					<div class="pa page-content-top">
+
+						<div class="pa icon-bg page-hours opacity0"></div>
+						<div class="pa icon-bg page-time opacity0"><p class="day-time">13:30:00</p></div>
+						<div class="pa icon-bg page-words opacity0"></div>
+					</div>
+					<div class="pa page-content-bottom">
+
+						<div class="pa icon-bg page-count opacity0">
+							
+							<p class="pa page-minus"></p>
+							<p class="pa page-num">01</p>
+							<p class="pa tc page-plus"></p>
+						</div>
+
+						<div id="page6_btn1" class="pa icon-bg page-next page-next1 opacity0"></div>
+						<div id="page6_btn2" class="pa icon-bg page-next page-next2 opacity0"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 第七页 -->
+			<div id="page7" class="pr page page7 none">
+
+				<div class="pa page-img"><img class="pa img-p100" src="images/loading.png"></div>
+
+				<div class="pa page-content">
+					<div class="pa page-content-top">
+
+						<div class="pa icon-bg page-hours opacity0"></div>
+						<div class="pa icon-bg page-time opacity0"><p class="day-time">21:30:00</p></div>
+						<div class="pa icon-bg page-words opacity0"></div>
+					</div>
+					<div class="pa page-content-bottom">
+
+						<div class="pa icon-bg page-count opacity0">
+							
+							<p class="pa page-minus"></p>
+							<p class="pa page-num">01</p>
+							<p class="pa tc page-plus"></p>
+						</div>
+
+						<div id="page7_btn1" class="pa icon-bg page-next page-next1 opacity0"></div>
+						<div id="page7_btn2" class="pa icon-bg page-next page-next2 opacity0"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 第八页 -->
+			<div id="page8" class="pr page page8 none">
+
+				<div class="pa page-img"><img class="pa img-p100" src="images/loading.png"></div>
+
+				<div class="pa page-content">
+					<div class="pa page-content-top">
+
+						<div class="pa icon-bg page-hours opacity0"></div>
+						<div class="pa icon-bg page-time opacity0"><p class="day-time">22:30:00</p></div>
+						<div class="pa icon-bg page-words opacity0"></div>
+					</div>
+					<div class="pa page-content-bottom">
+
+						<div class="pa icon-bg page-count page-sp-bottom opacity0">
+							
+							<p class="pa page-minus"></p>
+							<p class="pa page-num">01</p>
+							<p class="pa tc page-plus"></p>
+						</div>
+
+						<div id="page8_btn1" class="pa icon-bg page-next page-next1 opacity0"></div>
+						<div id="page8_btn2" class="pa icon-bg page-next page-next2 opacity0"></div>
+					</div>
+				</div>
+			</div>
+			<!-- 第九页 -->
+			<div id="page9" class="pr page page9 none">
+
+				<div id="page_img9" class="pa page-img"><img class="pa img-p100" src="images/loading.png"></div>
+
+				<div class="page-content">
+
+					<div class="end-box opacity0">
+						<div class="end-dotime tr"></div>
+						<div class="end-notime tr"></div>
+						<div class="end-words"></div>
+						<div class="end-icon"></div>
+						<div class="end-again"></div>
+						<div class="end-activity"></div>
+						<div class="end-product"></div>
+					</div>
+
+					<div class="end-box opacity0">
+						<div class="end-dotime tr"></div>
+						<div class="end-notime tr"></div>
+						<div class="end-words"></div>
+						<div class="icon-bg end-icon"></div>
+						<div class="end-again"></div>
+						<div class="end-activity"></div>
+						<div class="end-product"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="p2" class="product none">
+
+			<div class="pa p-icon p2-title"></div>
+			<div class="pa p-icon p2-logo"></div>
+			<div class="pa p2-content">
+				<div><img src="images/p1.jpg"></div>
+				<div class="none"><img src="images/p2.jpg"></div>
+				<div class="none"><img src="images/p3.jpg"></div>
+				<div class="none"><img src="images/p4.jpg"></div>
+			</div>
+			<div class="pa p-icon p2-btn">
+				<div id="p2_play_again"></div>
+				<div id="p2_go_activity"></div>
+			</div>
+		</div>
+
+		<div id="p3" class="activity none">
+
+			<div class="pa p-icon p3-logo"></div>
+			<div class="pa p-icon p3-title"></div>
+			
+			<div class="pa p-icon p3-time"></div>
+			
+			<div class="pa p-icon p3-class"></div>
+			<div class="pa p-icon p3-words"></div>
+			<div class="pa p-icon p3-submit">
+				<input id="name" type="text">
+				<input id="mobile" type="tel">
+			</div>
+			<div class="pa p-icon p3-btn">
+				<div id="p3_play_again"></div>
+				<div id="p3_submit"></div>
+			</div>
+		</div>
+		<script type="text/javascript">
+
+		    var require = {
+		
+		         urlArgs: 'v=2.06'
+		    };
+		
+		</script>
+		<script type="text/javascript" src="js/lib/require.js" data-main="js/index" defer async></script>
+
+	</body>
+</html>
